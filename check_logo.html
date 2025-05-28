@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>检查LOGO尺寸</title>
+    <script>
+        function showImageDimensions() {
+            const img = document.getElementById('logo');
+            const dimensions = document.getElementById('dimensions');
+            dimensions.innerText = `图片原始尺寸: ${img.naturalWidth} x ${img.naturalHeight}px`;
+        }
+    </script>
+</head>
+<body>
+    <h1>LOGO图片检查</h1>
+    <img id="logo" src="images/car_logo.jpg" alt="LOGO" onload="showImageDimensions()">
+    <p id="dimensions"></p>
+</body>
+</html>
